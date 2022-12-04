@@ -4,12 +4,12 @@ import os.path as osp
 # Default neural network backend for each algo
 # (Must be either 'tf1' or 'pytorch')
 DEFAULT_BACKEND = {
-    'vpg': 'pytorch',
+    'vpg': 'tf1',
     'trpo': 'tf1',
-    'ppo': 'pytorch',
-    'ddpg': 'pytorch',
-    'td3': 'pytorch',
-    'sac': 'pytorch'
+    'ppo': 'tf1',
+    'ddpg': 'tf1',
+    'td3': 'tf1',
+    'sac': 'tf1'
 }
 
 # Where experiment outputs are saved by default:
@@ -22,6 +22,6 @@ FORCE_DATESTAMP = False
 # Whether GridSearch provides automatically-generated default shorthands:
 DEFAULT_SHORTHAND = True
 
-# Tells the GridSearch how many seconds to pause for before launching 
+# Tells the GridSearch how many seconds to pause for before launching
 # experiments.
 WAIT_BEFORE_LAUNCH = 5
